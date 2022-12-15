@@ -1,12 +1,14 @@
 style.cssCSS
-body {
-  background: #34495e;
-  font: normal 300 18px "Roboto", sans-serif;
-  
+
+
+body.fade {
+  opacity: 0;
 }
 
+
+
 .explanaition{
-  background-color: #ecf0f1;
+  background-color: white;
   width: 60vw;
   margin:auto;
   padding: 60vw;
@@ -112,36 +114,57 @@ body {
   
    @media only screen and (max-width: 500px) {
    *{font-size:12px;}
+   .options{
+    display: grid;
+    grid-template-areas: 
+    '187'
+    '188'
+    '189'
+    'כללי';
+    
+    margin-top: 5vh;
+    
+    
+    }
+
    }
 
    
 
-
-
-
-
-
-   
-
-
 body {
-	background: rgb(229, 248, 233);
+	background: rgb(199, 218, 218);
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
 	height:100vh;
 	margin: -20px 0 50px;
+  font: normal 300 18px "Roboto", sans-serif;
 }
+
+
 
 .container{
     background-color: #ecf0f1;
-    width: 60vw;
+    width: 50vw;
     margin:auto;
     padding: 60vw;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 2vh;
+}
+
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position:relative;
+	overflow: hidden;
+	width: 50vw;
+	height: 60vh;
+  margin-top:8vh;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
 }
 
 
@@ -171,8 +194,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #e62739;
+	background-color: #e62739;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -201,15 +224,24 @@ input {
 	width: 100%;
 }
 
-.container {
-	background-color: #fff;
-	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	position:relative;
-	overflow: hidden;
-	width: 60vw;
-	height: 80vh;
-    margin-top:8vh;
+
+
+.email {
+  text-align: right;
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.password{
+  text-align: right;
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
 }
 
 .form-container {
@@ -235,9 +267,9 @@ input {
 
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #2227aa;
+	background: -webkit-linear-gradient(to right, #00047b, #00047b);
+	background: linear-gradient(to right, #00047b, #00047b);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -281,3 +313,195 @@ input {
 	height: 40px;
 	width: 40px;
 }
+
+.הפרוייקט{
+  background-color:transparent ;
+  border-radius: 4px;
+  border-color: black;
+  width: 20vw;
+  margin-block-end: 10px;
+  color:#000000;
+  margin: auto;
+  margin-top: 7vh;
+}
+
+.text2{
+  text-align: center;
+  font-family: "IBM Plex Sans Hebrew", sans-serif; 
+  outline-color: black;
+}
+
+.btna{
+  background-color: #007FFF;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 20vw;
+  margin-block-end: 10px;
+  -webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+
+
+}
+
+.btnb{
+  background-color: #00d9ffce;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 20vw;
+  margin-block-end: 10px;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  
+  }
+
+.btnc{
+  background-color:#00308F ;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 20vw;
+  margin-block-end: 10px;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  
+  }
+
+.btnd{
+  background-color:#7FFFD4 ;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 20vw;
+  margin-block-end: 10px;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  
+  }
+
+.btna:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #47a3ff;
+}
+
+.btnb:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #63e8ffce;
+}
+
+.btnc:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #003fbc;
+}
+
+.btnd:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #a6ffe1;
+}
+
+.options{
+display: grid;
+grid-template-areas: 
+'187'
+'188'
+'189'
+'כללי';
+
+grid-template-columns: auto auto auto auto;
+margin-top: 5vh;
+}
+
+.גמש{
+  text-align: center;
+  background-color: #9068be;
+  font-size: smaller;
+  -webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+.סלקיום{
+  text-align: center;
+  background-color: #9068be;
+  font-size: smaller;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s  
+}
+
+.הסעים{
+  text-align: center;
+  background-color: #9068be;
+  font-size: smaller;
+  -webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+.פירוט{
+  display: grid;
+  grid-template-areas: 
+  'גמש סלקיום הסעים';
+
+
+  margin-top: 10vh;
+
+}
+
+.פירוטדרכים{
+  display: grid;
+  grid-template-areas: 
+  'גמש סלקיום הסעים';
+
+
+  margin-top: 25vh;
+}
+
+#navigation-bar a.active{
+  color:white;
+  text-decoration: underline white;
+}
+
+.קטגוריה{
+  background-color:transparent ;
+  border-radius: 4px;
+  border-color: black;
+  width: 20vw;
+  margin-block-end: 10px;
+  color:#000000;
+}
+
+.input{
+  text-align: right;
+}
+
+.cont{
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position:relative;
+	overflow: hidden;
+	width: 30vw;
+	height: 80vh;
+  margin-top:8vh;
+  margin:auto;
+  -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+
+}
+
+
+
+
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+
+
+
+

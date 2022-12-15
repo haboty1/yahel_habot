@@ -3,10 +3,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
   <link rel="stylesheet" href="https://fonts.google.com/specimen/IBM+Plex+Sans+Hebrew?subset=hebrew">
+  <script defer src="../static/script.js"></script>
 <head>
   <meta charset="UTF-8">
   <title>Navigation Bar</title>
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+ <link rel="javascript" href="../static/script.js">
 
       <link rel="stylesheet" href="../static/design2.css">
 </head>
@@ -16,33 +18,27 @@
   <div id="menu-nav">
   <div id="navigation-bar">
     <ul class="nav">
-      <li class="בית"><a href="file:///C:/Users/user/Documents/web/REPOS/yahel_habot/views/%D7%91%D7%99%D7%AA.html"><i class="fa fa-home"></i><span>בית</span></a></li>
-      <li class="פרוייקטים"><a href="file:///C:/Users/user/Documents/web/REPOS/yahel_habot/views/%D7%A4%D7%A8%D7%95%D7%99%D7%99%D7%A7%D7%98%D7%99%D7%9D.html"><i class=""></i><span>פרוייקטים</span></a></li>
-      <li class="דרכים"><a href="#"><i class=""></i><span>דרכי מימוש</span></a></li>
-      <li class="מימוש"><a href="#"><i class=""></i><span>עדכון המימוש</span></a></li>
-	  <li class="כניסה"><a href="file:///C:/Users/user/Documents/web/REPOS/yahel_habot/views/%D7%9B%D7%A0%D7%99%D7%A1%D7%94.html"><i class="fa fa-user"></i> <span>כניסת משתמשים</span></a></li>
+	  <li class="כניסה"><a href="ffile:///C:/Users/user/Documents/web/REPOS/yahel_habot/views/%D7%9B%D7%A0%D7%99%D7%A1%D7%94.html"><i class="fa fa-user"></i> <span>כניסת משתמשים</span></a></li>
     </ul>
   </div>
   </div>
+</div>
 
   <div class="container" id="container">
     <div class="form-container log-in-container">
-        <form action="#">
+        <form action="action="/action_page.php"">
             <h1>כניסת משתמשים</h1>
             <div class="social-container">
             </div>
-            <span>השתמש במייל של האוניברסיטה</span>
-            <input type="email" placeholder="מייל" />
-            <input type="password" placeholder="סיסמא" />
-            <button>כניסה</button>
+            <span>השתמש באימייל של האוניברסיטה</span>
+            <input class="email" type="email" placeholder="מייל" />
+            <input class="password" type="password" placeholder="מספר אישי" />
+            <button input type="submit" value="Submit" >כניסה</button>
         </form>
     </div>
     <div class="overlay-container">
         <div class="overlay">
-            <div class="overlay-panel overlay-right">
-                <h1 class="h1">כניסה לקציני תקציב </h1>
-                <p class="p">המשתמשים הרשומים יוכלו לגשת לבסיס הנתונים</p>
-            </div>
+            
         </div>
     </div>
 </div>
