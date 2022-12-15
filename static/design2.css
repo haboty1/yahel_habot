@@ -318,11 +318,12 @@ input {
   background-color:transparent ;
   border-radius: 4px;
   border-color: black;
-  width: 20vw;
+  width: 30vw;
   margin-block-end: 10px;
   color:#000000;
   margin: auto;
   margin-top: 7vh;
+
 }
 
 .text2{
@@ -453,10 +454,6 @@ animation: animatezoom 0.6s
   margin-top: 25vh;
 }
 
-#navigation-bar a.active{
-  color:white;
-  text-decoration: underline white;
-}
 
 .קטגוריה{
   background-color:transparent ;
@@ -502,6 +499,13 @@ animation: animatezoom 0.6s
 
 
 
+.active{
+  color:white;
+  text-decoration: underline white;
+}
 
-
+.בחירה{
+  width:30vw;
+  text-align: right;
+}
 
