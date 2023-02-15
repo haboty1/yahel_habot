@@ -1,0 +1,24 @@
+{
+  "name": "yahel_habot",
+  "version": "1.0.0",
+  "description": "yahel habot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haboty1/yahel_habot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haboty1/yahel_habot/issues"
+  },
+  "homepage": "https://github.com/haboty1/yahel_habot#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.1.2",
+    "pug": "^3.0.2"
+  }
+}

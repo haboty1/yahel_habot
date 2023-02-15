@@ -1,5 +1,5 @@
 const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('ul li').forEach(link => {    
+const navLinks = document.querySelectorAll('ul li a').forEach(link => {    
     if(link.href.includes(`${activePage}`)){
       link.classList.add('active');
     }
@@ -15,3 +15,5 @@ const navLinks = document.querySelectorAll('ul li').forEach(link => {
     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
     return false;  
  }
+
+ 

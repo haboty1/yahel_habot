@@ -1,0 +1,29 @@
+meta(name='viewport' content='width=device-width, initial-scale=1.0')
+link(rel='stylesheet' href='https://fonts.google.com/specimen/IBM+Plex+Sans+Hebrew?subset=hebrew')
+script(defer='' src='../static/script.js')
+head
+  meta(charset='UTF-8')
+  title Navigation Bar
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css')
+  link(rel='javascript' href='../static/script.js')
+  link(rel='stylesheet' href='/design2.css')
+.grid-container
+  #menu-nav
+    #navigation-bar
+      ul.nav
+        li.entry
+          a(href='/entry')
+            i.fa.fa-user
+            span כניסה
+#container.container
+  .form-container.log-in-container
+    form(action='/entry' method='POST')
+      h1 כניסת משתמשים
+      .social-container
+        span הכנס דרך המייל של האוניברסיטה
+        input#userName.userName(type='text' name="UserName" placeholder='מייל' autocomplete='off' required)
+        input#password.passward(type='password' name="UserPassword" placeholder='מספר אישי' required='')
+        button(type='submit') כניסה
+  .overlay-container
+    .overlay
+

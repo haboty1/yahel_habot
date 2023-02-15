@@ -1,0 +1,63 @@
+meta(name='viewport' content='width=device-width, initial-scale=1.0')
+link(rel='stylesheet' href='https://fonts.google.com/specimen/IBM+Plex+Sans+Hebrew?subset=hebrew')
+script(defer='' src='../static/script.js')
+head
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  meta(charset='UTF-8')
+  title Navigation Bar
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css')
+  link(rel='stylesheet' href='/design2.css')
+body 
+.grid-container
+  #menu-nav
+    #navigation-bar
+      ul.navBar
+        li.home
+            a(href='/home')
+              i.fa.fa-home
+              span בית
+        li.projects
+            a(href='/menu')
+              i
+              span פרוייקטים
+        li.roads
+            a(href='/roads')
+              i
+              span דרכי מימוש
+        li.implemntion
+            a(href='/execution')
+              i
+              span מימוש
+        li.entrence
+            a(href='/entry')
+              i.fa.fa-user
+              span כניסה
+  .options
+    .maslulim
+      .d
+        button.catagory
+          | &#x5E7;&#x5D5;&#x5E8;&#x5E1; 187
+        each val in maslulim
+         button.btnc(onclick=`document.location='/${val.projectname}'`) #{val.projectname}
+       
+    .mevoot
+      .e
+        button.catagory
+          | &#x5E7;&#x5D5;&#x5E8;&#x5E1; 188
+        each val in mevoot
+         button.btna(onclick=`document.location='/${val.projectname}'`)  #{val.projectname}
+       
+    .reshony
+      .a
+        button.catagory
+          | &#x5E7;&#x5D5;&#x5E8;&#x5E1; 189
+        each val in reshony
+         button.btnb(onclick=`document.location='/${val.projectname}'`)  #{val.projectname}
+       
+    .general
+      .to
+        button.catagory
+          | &#x5DB;&#x5DC;&#x5DC;&#x5D9;
+        each val in general
+         button.btnd(onclick=`document.location='/${val.projectname}'`) #{val.projectname}
+        

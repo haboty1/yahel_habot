@@ -96,15 +96,15 @@ body.fade {
       list-style: none;
   }
   
-  .פרוייקטים{
+  .projects{
     background-color: #6ed3cf;
   }
   
-  .דרכים{
+  .roads{
     background-color: #9068be;
   }
   
-  .מימוש{
+  .implemntion{
     background-color: #e62739;
   }
   
@@ -117,10 +117,10 @@ body.fade {
    .options{
     display: grid;
     grid-template-areas: 
-    '187'
-    '188'
-    '189'
-    'כללי';
+    'maslulim'
+    'mevoot'
+    'reshony'
+    'general';
     
     margin-top: 5vh;
     
@@ -314,7 +314,7 @@ input {
 	width: 40px;
 }
 
-.הפרוייקט{
+.theproject{
   background-color:transparent ;
   border-radius: 4px;
   border-color: black;
@@ -400,24 +400,26 @@ animation: animatezoom 0.6s
 .options{
 display: grid;
 grid-template-areas: 
-'187'
-'188'
-'189'
-'כללי';
+'maslulim'
+'mevoot'
+'reshony'
+'general';
 
 grid-template-columns: auto auto auto auto;
 margin-top: 5vh;
 }
 
-.גמש{
+.gamash{
   text-align: center;
+  width: 30vw;
   background-color: #9068be;
   font-size: smaller;
   -webkit-animation: animatezoom 0.6s;
 animation: animatezoom 0.6s
 }
 
-.סלקיום{
+.salkium{
+  width: 30vw;
   text-align: center;
   background-color: #9068be;
   font-size: smaller;
@@ -427,7 +429,8 @@ animation: animatezoom 0.6s
   animation: animatezoom 0.6s  
 }
 
-.הסעים{
+.heseim{
+  width: 30vw;
   text-align: center;
   background-color: #9068be;
   font-size: smaller;
@@ -435,7 +438,7 @@ animation: animatezoom 0.6s
 animation: animatezoom 0.6s
 }
 
-.פירוט{
+.details{
   display: grid;
   grid-template-areas: 
   'גמש סלקיום הסעים';
@@ -445,7 +448,7 @@ animation: animatezoom 0.6s
 
 }
 
-.פירוטדרכים{
+.explenations{
   display: grid;
   grid-template-areas: 
   'גמש סלקיום הסעים';
@@ -455,7 +458,7 @@ animation: animatezoom 0.6s
 }
 
 
-.קטגוריה{
+.catagory{
   background-color:transparent ;
   border-radius: 4px;
   border-color: black;
@@ -499,12 +502,12 @@ animation: animatezoom 0.6s
 
 
 
-.active{
+#navigation-bar a.active{
   color:white;
   text-decoration: underline white;
 }
 
-.בחירה{
+.projectname{
   width:30vw;
   text-align: right;
 }
